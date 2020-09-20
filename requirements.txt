@@ -1,0 +1,14 @@
+python-dotenv
+requests
+tqdm
+psycopg2
+jupyter
+spacy
+gensim
+scipy
+pandas
+matplotlib
+beautifulsoup4
+scikit-learn
+spherecluster
+seaborn
