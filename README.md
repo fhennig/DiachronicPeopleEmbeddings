@@ -5,7 +5,19 @@ This repository accompanies the paper TODO.
 The data downloading, processing and model building is all in the
 code.
 
-## Install & Setup
+## Pre-trained Embeddings
+
+The pretrained embedding files are found in the
+`pretrained_embeddings` directory.  The vocabulary is found in
+`vocab.tsv`, each row contains a token and its total count over all 20
+years, separated by a `\tab`.  The embeddings are in the `npz` files.
+There are two files for each year, `u` and `v`.  The embeddings in
+each can be used on their own, or `u` and `v` can be concatenated to
+create embeddings with twice as many dimensions.
+
+## Processing Pipeline
+
+### Install & Setup
 
 The requirements need to be installed, and the NER/tokenization model
 needs to be downloaded:
@@ -24,7 +36,7 @@ parameters can be set in environment variables or in an `.env` file:
     DB_PASSWORD=P4s5w0rd
     DB_NAME=dbnamehere
 
-## Usage
+### Usage
 
 The commandline tool is documented:
 
@@ -50,7 +62,7 @@ There are 7 supported commands:
   vocabulary is created based on a given minimum occurrence count.
 - `train`: Train a model.
 
-## File Structure
+### File Structure
 
 TODO
 
