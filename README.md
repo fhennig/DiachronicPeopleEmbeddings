@@ -1,6 +1,8 @@
 # Diachronic People Embeddings
 
-This repository accompanies the paper TODO.
+This repository accompanies the paper ["Diachronic Embeddings for
+People in the News" (Hennig, Wilson;
+2020)](https://www.aclweb.org/anthology/2020.nlpcss-1.19.pdf).
 
 The data downloading, processing and model building is all in the
 code.
