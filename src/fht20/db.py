@@ -19,7 +19,10 @@ class DBInfo:
         password = os.getenv("DB_PASSWORD")
         db_name = os.getenv("DB_NAME")
         if username is None or port is None or password is None or db_name is None:
-            raise Exception("Some information could not be loaded.")
+            raise Exception(
+                ("Some information could not be loaded. "
+                 "Did you create the .env file or set environment variables correctly?")
+            )
         return DBInfo(host, port, username, password, db_name)
 
     def get_connection(self):
